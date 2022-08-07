@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="6" name="Test" parallel="methods"> <!-- we gave thread count 6 to start 6 browsers at a time,,,and parallel methods to run methods parallely -->
+                                                         <!-- we can give any thread value according to how many browser we wanted start at a time -->
+                                                         <!-- when you execute classes set parallel="classes" -->
+    <classes>
+      <class name="SeleniumLAST.ParallelExecution"/>
+  <!--    <class name="SeleniumUSE.AlertHandling"/>        when you want to execute two classes at a time add path of that class here-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
