@@ -30,7 +30,7 @@ public class AllCommands {
 	 * whatever origin in central repo main/master from where you trying to pull code mention there.
 	 * 
 	 * 
-	 * 
+	 *  git branch --set-upstream-to=origin Rushi     this is also on way to set upstream origin to any branch 
 	 *  
 	 */
 	
