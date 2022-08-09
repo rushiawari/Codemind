@@ -19,7 +19,7 @@ public class AllCommands {
 	 * 
 	 * 6)  git commit -m "massage" :- before push  must needed action with proper massage
 	 *
-	 * 7) git push --set-upstream "branch name" :- when you want to push in specific branch and also set remote for that branch
+	 * 7) git push --set-upstream origin "branch name" :- when you want to push in specific branch and also set remote for that branch
 	 * 
 	 * 8) git push :- if you have set remote already then and then you can directly push  (git remote add origin) or above step
 	 *    for 1st time push you need to set remote from 2nd time you can directly push.
@@ -30,7 +30,7 @@ public class AllCommands {
 	 * whatever origin in central repo main/master from where you trying to pull code mention there.
 	 * 
 	 * 
-	 * 
+	 *  git branch --set-upstream-to=origin Rushi     this is also on way to set upstream origin to any branch 
 	 *  
 	 */
 	

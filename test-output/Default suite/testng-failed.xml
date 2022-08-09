@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumLAST.HowToTakeSSonFailuer">
+      <class name="SeleniumLAST.HowToFindBrokenLINKS">
         <methods>
-          <include name="failuerScreenShots1"/>
-          <include name="tearDown"/>
+          <include name="brokenLinks"/>
         </methods>
-      </class> <!-- SeleniumLAST.HowToTakeSSonFailuer -->
+      </class> <!-- SeleniumLAST.HowToFindBrokenLINKS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
