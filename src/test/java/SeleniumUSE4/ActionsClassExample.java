@@ -1,4 +1,4 @@
-package SeleniumLAST;
+package SeleniumUSE4;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -56,7 +56,6 @@ public class ActionsClassExample {
 		
 		
 		 
-		
 		
 		
 		

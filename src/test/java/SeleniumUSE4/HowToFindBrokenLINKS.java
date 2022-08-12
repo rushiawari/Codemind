@@ -1,4 +1,4 @@
-package SeleniumLAST;
+package SeleniumUSE4;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HowToFindBrokenLINKS {
+public class HowToFindBrokenLINKS {         //IMP- This Code is Used for API Testing
 		
 		 //  each link is always under      => Anchor Tag (<a>)
 		 //  Links Are always assigned to => Atrribute href
@@ -48,13 +48,13 @@ public class HowToFindBrokenLINKS {
 			 // but it only hits , so to get to know current state of Links either broken or working we need to typecast "URL" with "HttpURLConnection" class
 			 // .openConnection=> opens the connection with url's so we can store its statetics in huc
 			 huc=(HttpURLConnection) new URL (ele.getAttribute("href")).openConnection();
-			 huc.setConnectTimeout(5000);            //set timeout to connect
+			 huc.setConnectTimeout(5000);            //set timeout to connect // This is must (otherwise timeout exception will throw)
 			 huc.connect();                        // connect with Url's
 			 
 			 //Lets put Assert here to check our test case is passing or failing
 			 
-			 Assert.assertEquals(huc.getResponseCode(), 200);         // it means if responce code is 200 onl then test case will pass , if not it will get imediatly fail.
-			 
+			 Assert.assertEquals(huc.getResponseCode(), 200);         // it means if responce code is 200  then test case will pass , if not it will get imediatly fail.
+			                                                          // Assert is optional ..only if you perform as test case
 			 if (huc.getResponseCode()==200) {
 				 
 				 System.out.println( ele.getAttribute("href") + ":" + "This link is Working Fine");
@@ -70,7 +70,13 @@ public class HowToFindBrokenLINKS {
 		 
 		 
 		 
-	/// This is code is mosty used in API to hit any API	 
+	/// This is code is mosty used in API to hit any API
+		 
+		 //you can write test case for any respoance code like 200,201,404,500 etc
+		 
+		 // To check any API behaviour
+		 
+		 // This code is also static never changes only put your required responce code for which you are testing API.
 		 
 		}
 		
