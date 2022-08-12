@@ -3,12 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="SeleniumLAST.ParallelExecution">
+      <class name="SeleniumUSE4.ParallelExecution">
         <methods>
+          <include name="test1"/>
           <include name="test3"/>
+          <include name="test5"/>
+          <include name="test2"/>
           <include name="test4"/>
+          <include name="test6"/>
         </methods>
-      </class> <!-- SeleniumLAST.ParallelExecution -->
+      </class> <!-- SeleniumUSE4.ParallelExecution -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

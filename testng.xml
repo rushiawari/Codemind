@@ -5,7 +5,7 @@
                                                          <!-- we can give any thread value according to how many browser we wanted start at a time -->
                                                          <!-- when you execute classes set parallel="classes" -->
     <classes>
-      <class name="SeleniumLAST.ParallelExecution"/>
+      <class name="SeleniumUSE4.ParallelExecution"/>
   <!--    <class name="SeleniumUSE.AlertHandling"/>        when you want to execute two classes at a time add path of that class here-->
     </classes>
   </test> <!-- Test -->
